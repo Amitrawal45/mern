@@ -88,7 +88,7 @@
 // console.log("According to your score your grade is = ",grade)
 
 
-//Print the amount of tax to be paid by a software developer 
+//Print the amount of tax to be paid by a software developer. 
 //if he earn a salary of Npr. 3000000 per year
 //The tax range to be paid is as follow:
 // for the first 500000 => 1%

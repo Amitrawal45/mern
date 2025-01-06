@@ -113,8 +113,23 @@
 // oneToN(2)
 // oneToN(4)
 
-function eqn(a,b){
-    return Math.abs(a*a*a) +Math.abs(b*b*b)
+// function eqn(a,b){
+//     return Math.abs(a*a*a) +Math.abs(b*b*b)
+// }
+// console.log( eqn(-1,2))
+// console.log(eqn(-2,-9))
+
+
+// const print = (a,b)=>{
+//     return a + b
+
+// }
+// console.log(print(1))
+
+const foobar = ()=>{
+    a = a+ b
 }
-console.log( eqn(-1,2))
-console.log(eqn(-2,-9))
+let a = 10;
+let b = 20
+foobar()
+console.log(a)
