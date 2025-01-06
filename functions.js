@@ -85,20 +85,36 @@
 // console.log(result)
 
 
-let n = prompt("Enter a number")
-let arr = []
-for(let i=1; i < n ; i++){
-    arr[i - 1] = i
+// let n = prompt("Enter a number")
+// let arr = []
+// for(let i=1; i < n ; i++){
+//     arr[i - 1] = i
+// }
+// console.log(arr)
+
+// let output = arr.reduce((prev,curr)=>{
+//     return prev + curr
+// })
+// console.log("Addition: ",output)
+
+// let result = arr.reduce((fact,curr)=>{
+//     return fact * curr
+// })
+// console.log("Factorial is: ",result)
+
+
+// function oneToN(n){
+    
+//     for(let i = 1; i <=n; i++){
+//         console.log(i)
+//     }
+//     console.log()
+// }
+// oneToN(2)
+// oneToN(4)
+
+function eqn(a,b){
+    return Math.abs(a*a*a) +Math.abs(b*b*b)
 }
-console.log(arr)
-
-let output = arr.reduce((prev,curr)=>{
-    return prev + curr
-})
-console.log("Addition: ",output)
-
-let result = arr.reduce((fact,curr)=>{
-    return fact * curr
-})
-console.log("Factorial is: ",result)
-
+console.log( eqn(-1,2))
+console.log(eqn(-2,-9))
