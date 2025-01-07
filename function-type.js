@@ -88,13 +88,113 @@
 // }
 // tillTen(1)
 
-function findEven(i) {
-  if (i <= 20) {
-    if (i % 2 === 0) {
-      console.log(i);
+// function findEven(i) {
+//   if (i <= 20) {
+//     if (i % 2 === 0) {
+//       console.log(i);
+//     }
+//     i++;
+//     findEven(i);
+//   }
+// }
+// findEven(1);
+
+let categories = [
+  {
+    name: "Men's Fashion",
+    children: [
+      {
+        name: "Men's Bag",
+        children: [
+          {
+            name: "Crossbody Bag",
+            children: [
+              {
+                name: "Tote Bag",
+                children: null,
+              }
+            ],
+          },
+          {
+            name: "Backpacks",
+            children: null,
+          },
+          {
+            name: "Messenger Bag",
+            children: null,
+          },
+          {
+            name: "Business Bag",
+            children: null,
+          },
+        ],
+      },
+      {
+        name: "Clothing",
+        children: [
+          {
+            name: "Shirts",
+            children: null,
+          },
+          {
+            name: "Pants",
+            children: null,
+          },
+          {
+            name: "T-Shirts",
+            children: null,
+          },
+          {
+            name: "Jackets",
+            children: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Women's Fashion",
+    children: [
+      {
+        name: "Women's Bag",
+        children: [
+          {
+            name: "Crossbody Bag",
+            children: null,
+          },
+          {
+            name: "Backpacks ",
+            children: null,
+          },
+          {
+            name: "Clutches",
+            children: null,
+          },
+          {
+            name: "Handbags",
+            children: null,
+          },
+        ],
+      },
+    ],
+  },
+];
+
+
+
+const catPrint = (cat, depth = 0) => {
+  if (Array.isArray(cat)) {
+    for (let cat1 of cat) {
+      
+      let toPrint = "\t".repeat(depth);
+      console.log(toPrint + cat1.name);
+      
+      catPrint(cat1.children, depth + 1);
     }
-    i++;
-    findEven(i);
   }
+};
+
+for (let cat of categories) {
+  console.log(cat.name); 
+  catPrint(cat.children, 1); 
 }
-findEven(1);
