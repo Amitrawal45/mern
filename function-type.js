@@ -97,7 +97,8 @@
 //     findEven(i);
 //   }
 // }
-// findEven(1);
+// findEven(1); 
+
 
 let categories = [
   {
