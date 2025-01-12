@@ -16,6 +16,8 @@
  * -Prototype Function
  * -Classes
  * -Instances (new ,this)
+ * #Private
+ * _Protected
  *
  * 4-Pillers
  * a. Abstraction
